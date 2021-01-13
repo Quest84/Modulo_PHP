@@ -4,7 +4,7 @@
 	$id = $_REQUEST['id'];
 	$id2 = $_REQUEST['id2'];
 
-	$queryMaterias = "SELECT m.nombre, m.clave_materia, m.creditos FROM materias AS m INNER JOIN materias_carga AS c ON c.clave_materia = m.clave_materia and c.id_carga_acad = '$id';";
+	$queryMaterias = "SELECT m.nombre, m.clave_materia, m.creditos FROM materias AS m INNER JOIN materias_carga AS c ON c.clave_materia = m.clave_materia and c.id_carga_acad = '$id'";
 
 	$queryControl = "SELECT num_control FROM carga_academica WHERE num_control = '$id2'";
 
@@ -85,7 +85,7 @@
 	$pdf->SetFillColor(232,232,232);
 	$pdf->SetFont('Arial','B',12);
 	$pdf->Cell(60,6,'Clave de la Materia',1,0,'C',1);
-	$pdf->Cell(80,6,'Nombre',1,0,'C',1);
+	$pdf->Cell(80,6,'Nombre de la Materia',1,0,'C',1);
 	$pdf->Cell(50,6,'Creditos',1,1,'C',1);
 	
 	$pdf->SetFont('Arial','',10);

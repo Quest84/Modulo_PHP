@@ -64,7 +64,7 @@ a:active {
 				<?php
 					include ("conexion.php");
 
-					$query = "SELECT * FROM Carga_Academica ORDER BY id_carga_acad";
+					$query = "SELECT * FROM carga_academica ORDER BY id_carga_acad";
 					$resultado = $conexion->query($query);
 					while($row = $resultado->fetch_assoc()){
 				?>

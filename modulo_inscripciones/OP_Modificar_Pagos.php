@@ -9,7 +9,7 @@ include("conexion.php");
 	$TipoPago = $_POST['tipoPago'];
 	$Cantidad = $_POST['Cantidad'];
 
-	$query = "UPDATE Pagos SET Folio = '$Folio', tipoPago = '$TipoPago', Cantidad =  '$Cantidad' WHERE ID_Pago = '$id'";
+	$query = "UPDATE pagos SET folio = '$Folio', tipoPago = '$TipoPago', cantidad =  '$Cantidad' WHERE id_pago = '$id'";
 
 	$resultado = $conexion->query($query);
 
